@@ -1,0 +1,55 @@
+<head>
+    <title>Astrology app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  </head>
+  
+  <body>
+      {{#if currentUser}}
+       {{> sidebar}} 
+       {{/if}}
+    <nav>
+      <div class="nav-wrapper"> 
+        
+        <span class="brand-logo center">Astrology</span>
+        <!--<li class="nav-item">{{> loginButtons}}</li>-->
+        {{#if currentUser}}
+        {{> logout}}
+        {{/if}}
+      </div>
+    </nav>
+      <div class="container"> 
+      {{#if currentUser}}
+      {{> appLayout}} 
+      {{else}}
+      {{> auth}}
+      {{/if}}
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    
+  </body>
+  <template name="appLayout">
+    {{> Template.dynamic template=main}}
+    {{> Template.dynamic template=footer}}
+    <br>
+  </template>
+
+  <template name="auth">
+    {{> Template.dynamic template=mainauth}}
+  </template>
+
+  <template name="sidebar">
+      <ul id="slide-out" class="side-nav">
+          <li><a href="/home"><i class="material-icons">home</i><span>Home</span></a></li>
+          <li><div class="divider"></div></li>        
+          <li><a href="/charts"><i class="material-icons">list</i><span>Charts</span></a></li>
+          <li><div class="divider"></div></li>
+          <li><a href="/profile"><i class="material-icons">person</i><span>Profile</span></a></li>
+          <li><div class="divider"></div></li>        
+          <li><a href="/settings"><i class="material-icons">settings</i><span>Settings</span></a></li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons bb">menu</i></a>
+  </template>
+  

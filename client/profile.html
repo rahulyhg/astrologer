@@ -1,0 +1,21 @@
+<template name="profile">
+        {{#if currentUser}}
+        <h4 class="center">Profile</h4>
+        <div class="container">
+        <ul class="collection">
+                
+                <li class="collection-item" id="nome"><label>Nome:</label> {{userData.profile.firstName}}
+                <!--<input type="text" class="collection-item" id="u-nome">--></li>
+                <li class="collection-item" id="sobrenome"><label>Sobrenome:</label> {{userData.profile.lastName}}
+               <!-- <input type="text" class="collection-item" id="u-sobrenome">--></li>
+                <li class="collection-item" id="username"><label>Username:</label> {{userData.username}}</li>
+                <li class="collection-item" id="email"><label>Email:</label> {{userEmail}}</li> 
+              </ul>
+        <button class="waves effect waves-light blue btn" id="btn-update" type="submit" value="Submit">Update</button>
+    </div>
+   
+    {{/if}}
+    </template>
+
+    
+    

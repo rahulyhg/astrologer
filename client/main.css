@@ -1,0 +1,87 @@
+/* CSS declarations go here */
+.place{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#btn {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.transitos {
+    margin-bottom: 20px;
+}
+
+.login{
+    font-family: Verdana;
+    color: #fff;
+    font-size: 20px;
+    background-size: 50px;
+    width: 30%;
+    background-color: rgb(172, 169, 169);
+}
+
+
+.bt{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.adj{
+    margin-top: 50px;
+}
+
+.part {
+    background-color: rgb(106, 106, 138);
+}
+
+.bb {
+    color: black;
+    font-size: 40px;
+}
+
+.posit {
+    margin-left: 200px;
+    margin-top: 30px;
+}
+.ff {
+    position: absolute;
+    bottom: 0px;
+    height: 80px;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+    
+}
+
+.body {
+    position: absolute;
+    bottom: 200px;
+    top: 200px;
+    left: 0px;
+    right: 0px;
+    overflow: auto;
+}
+
+.ic {
+    
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 5px;
+    color: white;
+    
+}
+
+.ii {
+    color: white;
+}

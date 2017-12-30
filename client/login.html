@@ -1,0 +1,39 @@
+<template name="login">
+    <div class="container">
+    <form class="loginform">
+        <h4 class="center">Sign In</h4>
+        <label class="center">Usename or Email</label>
+        <input type="text" name="usernemail" id="usernemail">
+        <label class="center">Password</label>
+        <input type="password" name="password" id="password">
+        <button type="submit" value="Submit" class="waves-effect waves-light btn blue bt">Submit</button>
+    </form>
+    <p class="center"> Don't have an account? Just <a href="/signup">register!</a></p>
+</div>
+</template>
+
+
+<template name="signup">
+        <div class="container">
+        <form class="signupform">
+            <h4 class="center">Sign Up</h4>
+            <label class="center">Username</label>
+            <input type="text" name="username" id="s-username">
+            <label class="center">Email</label>
+            <input type="email" name="email" id="s-email">
+            <label class="center">Nome</label>
+            <input type="text" name="nome" id="s-nome">
+            <label class="center">Sobrenome</label>
+            <input type="text" name="sobrenome" id="s-sobrenome">
+            <label class="center">Password</label>
+            <input type="password" name="password" id="s-password">
+            <button type="submit" value="Submit" class="waves-effect waves-light btn blue bt">Submit</button>
+        </form>
+        <p class="center"> Already a user? Just <a href="/login">sign in!</a></p>
+    </div>
+</template>
+
+<template name="logout">
+    <p><a href="#" class="logout">Logout</a></p>
+</template>
+

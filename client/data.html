@@ -1,0 +1,18 @@
+<template name="data">
+    <div class='container'>
+        <form class='add-form2'>
+         <input type="text" name='sign' placeholder='sign' id='sign-name'>
+         <input type="text" name='content' placeholder='description' id='sign-desc'>
+         <button type="submit" class="waves-effect waves-light btn" value="Submit" id="sub-btn">Send</button>
+        </form>
+      <p>{{> show_data}}</p>
+     </div>
+</template>
+
+<template name="show_data">
+    <ul>
+        {{#each signs2}}
+            <li>{{this.signName}} - {{this.signDescription}} - {{this._id}}</li>
+        {{/each}}
+    </ul>
+</template>
